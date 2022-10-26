@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
+    max-width: 100vw;
+}
+
+/***  Menu ***/
+.menu-contenedor{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.menu-lista{
+    display: flex;
+}
+.menu-lista li{
+    list-style: none;
+    padding: 0 10px;
+}
+
+.menu-lista li a{
+    text-decoration: none;
+    color: black;
+}
+.menu-lista li a:visited{
+    color: black;
+}
+
+@media only screen and (max-width: 900px){
+    .menu-lista{
+        display: none;
+    }
+}
+
+
+/*** Presentacion ***/
+
+.presentacion-contenedor{
+    height: calc(100vh-50px);
+    display: flex;
+    padding: 3rem;
+    max-width: 100%;
+}
+
+.presntacion-texto{
+    width: 60%;
+    padding-left: 5vw;
+}
+
+.presntacion-texto h1{
+    font-weight: 700;
+}
+
+.presntacion-texto p{
+    margin: 4vh 0;
+}
+
+.presentacion-texto-links{
+    display: flex;
+}
+
+.presentacion-texto-links a{
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.presentacion-texto-links a i{
+    margin-left: 0.5rem;
+}
+
+.presentacion-foto{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.presentacion-foto-img{
+    max-width: 20vw;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 900px){
+    .presentacion-contenedor{
+        padding: 1rem;
+        max-width: 100vw;
+    }
+    .presntacion-texto p{
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .presentacion-contenedor{
+        flex-direction: column-reverse;
+    }
+    .presntacion-texto{
+        width: 100%;
+    }
+    .presentacion-foto{
+        width: 100%;
+    }
+    .presentacion-texto-links a{
+        margin: auto;
+    }
+}
+
+/***  Sobre Mi ***/
+
+.acerca-de-mi{
+    padding: 2rem 3rem;
+    background-color: #EAF2FD;
+    max-width: 100%;
+}
+
+.acerca-de-mi p{
+    max-width: 80vw;
+}
+
+/*** Skills ***/
+.skills{
+    max-width: 100%;
+    padding: 2rem 3rem;
+    text-align: center;
+}
+.contenedor-skills{
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tarjeta{
+    height: 8rem;
+    width: 8rem;
+    background-color: #EAF2FD;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1rem;
+    /*border: 2px solid #2A7AE4;*/
+}
+
+.tarjeta i{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px){
+    .tarjeta{
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+/*** Hobbies ***/
+
+.hobbies{
+    max-width: 100%;
+    padding: 2rem 3rem;
+    text-align: center;
+}
+.contenedor-hobbies{
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*** Formacion ***/
+
+.formacion{
+    background-color: #EAF2FD;
+    text-align: center;
+}
+.contenedor-formacion{
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta-formacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 225px;
+}
+
+.tarjeta-formacion h3{
+    margin-bottom: 0;
+}
+
+/*** Experiencia ***/
+
+.experiencia{
+    text-align: center;
+    padding: 2rem;
+}
+
+.experiencia-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.experiencia-contenedor-botones{
+    padding: 2rem;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.boton-repositorio{
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    padding: 1rem;
+}
+
+.boton-demo{
+    border: 1px solid #2A7AE4;
+    background-color: #2A7AE4;
+    color: #F5F5F5;
+    padding: 1rem;
+}
+
+.experiencia-contenedor img{
+    max-width: 40vw;
+}
+
+@media only screen and (max-width: 600px){
+    .experiencia-contenedor{
+        flex-direction: column;
+    }
+    .fotoReversa{
+        flex-direction: column-reverse;
+    }
+    .experiencia-contenedor img{
+        max-width: 80vw
+    }
+    .boton-repositorio{
+        margin-bottom: 5px;
+    }
+}
+
+/*** Formulario de contacto ***/
+
+.contacto{
+    background-color: #EAF2FD;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.contacto-imagen{
+    width: 30vw;
+    padding: 0.5rem;
+}
+
+.contacto-imagen img{
+    max-width: 25vw;
+}
+
+.contacto-contenedor-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: last baseline;
+    max-width: 40vw;
+}
+
+.etiqueta{
+    width: 30vw;
+    display: block;
+    background-color: #fff;
+}
+
+.form-input{
+    width: 30vw;
+    display: block;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+.contacto-form textarea{
+    width: 30vw;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+.boton-enviar{
+    width: 15vw;
+    padding: 0.5rem;
+    background-color: #2A7AE4;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px){
+    .contacto{
+        padding: auto;
+    }
+    .contacto-imagen{
+        display: none;
+    }
+    .contacto-contenedor-form{
+        max-width: 80vw;
+    }
+    .etiqueta{
+        width: 70vw;
+    }
+    .form-input{
+        width: 70vw;
+    }
+    .contacto-form textarea{
+        width: 70vw;
+    }
+    .boton-enviar{
+        width: 40vw;
+    }
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+}
